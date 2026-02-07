@@ -33,8 +33,6 @@ def test_successful_login(driver):
 
     alert = driver.find_element(By.ID, "flash")
     assert alert.text == "You logged into a secure area!\n×"
-    if alert.text == "You logged into a secure area!\n×":
-        print("Успешная авторизация")
 
 
 def test_unsuccessful_login(driver):
@@ -53,5 +51,3 @@ def test_unsuccessful_login(driver):
 
     alert = driver.find_element(By.ID, "flash")
     assert alert.text == "Your username is invalid!\n×"
-    if alert.text == "Your username is invalid!\n×":
-        print("Неуспешная авторизация")
