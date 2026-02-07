@@ -32,9 +32,10 @@ def test_successful_login(driver):
     button.click()
 
     alert = driver.find_element(By.ID, "flash")
+    assert alert.text == "You logged into a secure area!\n×"
     if alert.text == "You logged into a secure area!\n×":
         print("Успешная авторизация")
-        assert alert.text == "You logged into a secure area!\n×"
+
 
 def test_unsuccessful_login(driver):
     driver.get("https://the-internet.herokuapp.com/login")
@@ -51,6 +52,6 @@ def test_unsuccessful_login(driver):
     button.click()
 
     alert = driver.find_element(By.ID, "flash")
+    assert alert.text == "Your username is invalid!\n×"
     if alert.text == "Your username is invalid!\n×":
         print("Неуспешная авторизация")
-        assert alert.text == "Your username is invalid!\n×"
