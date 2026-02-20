@@ -1,0 +1,1 @@
+[{"uid":"434fdc3c21e45a8","name":"Неуспешная авторизация с невалидными данными","time":{"start":1771588240362,"stop":1771588241174,"duration":812},"status":"passed","severity":"normal"},{"uid":"677b734a77a0e63e","name":"Успешная авторизация с валидными данными","time":{"start":1771588239166,"stop":1771588240047,"duration":881},"status":"passed","severity":"normal"}]
