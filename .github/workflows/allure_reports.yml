@@ -1,5 +1,7 @@
 name: Run tests with Allure
 on:
+  workflow_dispatch:
+    branches: [main, gh-pages]
   push:
     branches: [main]
   pull_request:
